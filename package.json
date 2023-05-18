@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "client": "npm start --prefix ./frontend ",
+    "client": "npm start --prefix /frontend ",
     "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "author": "srinjay",

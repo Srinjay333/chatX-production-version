@@ -32,10 +32,12 @@ app.use(errorHandler)
 
 
 //static files
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+const __dirname1 = path.resolve();
+
+app.use(express.static(path.join(__dirname1, "/frontend/build")));
 
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+  res.sendFile(path.join(__dirname1, "frontend", "build", "index.html"));
 });
 
 
